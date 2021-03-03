@@ -3,7 +3,7 @@
   <div class="add-restaurant">
     <h3 class="text-center">Add New Place</h3>
     <div class="add">
-      <form @submit="onSubmit">
+      <form>
         <div class="mb-3">
           <input
             required="true"
@@ -41,7 +41,7 @@
           ></textarea>
         </div>
         <div>
-          <input type="submit" value="submit" class="btn btn-primary mb-3" />
+          <input type="submit" value="submit" @click="onSubmit" class="btn btn-primary mb-3" />
         </div>
       </form>
       <div class="alert alert-success" role="alert" v-if="showSuccessMsg">

@@ -3,7 +3,7 @@
   <div>
     <div class="row">
       <div class="col-6">
-        <button class="btn btn-primary mb-3" @click="showPrevResults" v-if="showPriviousBtn">
+        <button class="btn btn-primary show-prev mb-3" @click="showPrevResults" v-if="showPriviousBtn">
           Show Previous Voting Results
         </button>
       </div>
@@ -69,7 +69,7 @@
               <button
                 v-if="!place.userVoted"
                 @click="voteForPlace(place)"
-                class="btn btn-primary"
+                class="btn btn-primary vote-btn"
               >
                 Vote
               </button>
